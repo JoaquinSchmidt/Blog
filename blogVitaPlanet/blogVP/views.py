@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
-def DALARAN(request):
+def Inicio(request):
 
-    return render(request, 'mi_html.html')
+    return render(request, 'inicio.html')
