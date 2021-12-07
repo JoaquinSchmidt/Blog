@@ -21,6 +21,24 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    'apps.1finPobreza',
+    'apps.2hambreCero',
+    'apps.3saludBienestar',
+    'apps.4educacionDeCalidad',
+    'apps.5igualdadGenero',
+    'apps.6aguaSaneamiento',
+    'apps.7energiaAsequible',
+    'apps.8trabajoDecente',
+    'apps.9aguaInnovacion',
+    'apps.10reduccion',
+    'apps.11ciudadesComunidades',
+    'apps.12produccionConsumos',
+    'apps.13accionClima',
+    'apps.14vidaSubmarina',
+    'apps.15ecosistemas',
+    'apps.16pazJusticia',
+    'apps.17alianzas',
+
 ]
 
 MIDDLEWARE = [
