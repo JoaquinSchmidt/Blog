@@ -1,6 +1,8 @@
 
 import os
 
+from django.urls import reverse_lazy
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -11,6 +13,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '*1x_#dva$z)mtt%7y-2+y%zpa4i@^x0%kay40q9o+kjibi0n99'
 
+AUTH_USER_MODEL = 'usuarios.Usuario'
+
+LOGIN_REDIRECT_URL = reverse_lazy('inicio')
+LOGOUT_REDIRECT_URL = reverse_lazy('login')
+
+LOGIN_URL = reverse_lazy('login')
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -20,7 +29,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+    'apps.ODS',
+    'apps.usuarios',
 
 ]
 
